@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>TravelBloom - Recommandations de Voyage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">🌍 TravelBloom</div>
+    <a href="#">Accueil</a>
+    <a href="#about">À propos de nous</a>
+    <a href="#contact">Contactez-nous</a>
+    <input type="text" id="search" placeholder="Rechercher..." aria-label="Rechercher une destination">
+    <button onclick="rechercher()">Rechercher</button>
+    <button onclick="reinitialiser()">Réinitialiser</button>
+  </nav>
+
+  <header class="hero">
+    <h1>Bienvenue sur TravelBloom</h1>
+    <p>Découvrez les meilleures destinations autour du monde.</p>
+  </header>
+
+  <section id="results"></section>
+
+  <section id="about">
+    <h2>À propos de nous</h2>
+    <div class="about-container">
+      <div class="about-left">
+        <p>Un développeur très sympa à recruter !</p>
+        <ul>
+          <li>Fadha Fahd</li>
+        </ul>
+      </div>
+      <div class="about-right">
+        <h3>Pays disponibles</h3>
+        <ul id="liste-pays"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contactez-nous</h2>
+    <form>
+      <label>Nom :</label><br>
+      <input type="text" name="nom" required><br><br>
+
+      <label>Email :</label><br>
+      <input type="email" name="email" required><br><br>
+
+      <label>Message :</label><br>
+      <textarea name="message" rows="4" cols="50" required></textarea><br><br>
+
+      <button type="submit">Soumettre</button>
+    </form>
+  </section>
+
+  <footer id="heure"></footer>
+
+  <script src="travel_recommendation.js"></script>
+</body>
+</html>
